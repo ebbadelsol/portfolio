@@ -1,3 +1,67 @@
 body {
-  font-family: "Roboto", sans-serif;
+	font-family: "Montserrat", sans-serif;
+	letter-spacing: -0.015em;
+}
+
+h1 {
+	font-size: 42px;
+	line-height: 53px;
+	font-weight: 600;
+}
+
+p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.wrapper {
+	margin: auto;
+	margin: 0px 5vw;
+	box-sizing: border-box;
+}
+
+.top-section,
+.summery-section,
+.tech-section,
+.featured-projects,
+.more-projects,
+.reflect-section,
+.skills-section,
+.some-section,
+footer {
+	border: solid red;
+}
+
+.top-section {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+
+.top-section,
+.summery-section,
+.tech-section,
+.featured-projects,
+.more-projects,
+.reflect-section,
+.skills-section,
+.some-section,
+footer {
+	border: solid red;
+}
+
+.top-textblock {
+	grid-column: span 3;
+}
+
+/* Big tablet */
+@media (min-width: 769px) {
+	.wrapper {
+		padding: 0px 10vw;
+	}
+}
+
+/* Small desktop */
+@media (min-width: 923px) {
 }
