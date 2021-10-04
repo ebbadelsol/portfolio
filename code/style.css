@@ -12,7 +12,6 @@ body {
 
 section {
 	padding: 48px 6.4vw;
-	margin: auto;
 }
 
 .summery-section,
@@ -56,16 +55,20 @@ section {
 	font-size: 22px;
 	line-height: 26.82px;
 	font-weight: 700;
-	background: #fa382f;
-	display: inline;
 	text-transform: uppercase;
 	color: #ffffff;
-	padding: 1px 7px;
 	text-align: center;
 }
 
 .colored {
 	color: #fa382f;
+}
+
+.colored-bg {
+	background: #fa382f;
+	text-transform: uppercase;
+	padding: 1px 7px;
+	text-align: center;
 }
 
 .line {
