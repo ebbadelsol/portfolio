@@ -1,67 +1,153 @@
+/********* General *********/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	font-family: "Montserrat", sans-serif;
 	letter-spacing: -0.015em;
 }
 
-h1 {
-	font-size: 42px;
-	line-height: 53px;
-	font-weight: 600;
+section {
+	padding: 48px 6.4vw;
+	/* margin: auto; */
 }
 
-p {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 30px;
+.summery-section,
+.featured-projects,
+.more-projects,
+.skills-section {
+	background: #f4f4f4;
 }
 
-.wrapper {
+/* .tech-section,
+.featured-projects,
+.more-projects,
+.reflect-section,
+.reflect-section,
+.sub-reflect-section {
 	margin: auto;
-	margin: 0px 5vw;
-	box-sizing: border-box;
+} */
+
+/********* Text Styles *********/
+
+.kicker {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #ffffff;
 }
 
-.top-section,
-.summery-section,
-.tech-section,
-.featured-projects,
-.more-projects,
-.reflect-section,
-.skills-section,
-.some-section,
-footer {
-	border: solid red;
+.bold {
+	font-weight: 700;
 }
 
-.top-section {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 20px;
+.big-heading {
+	font-size: 40px;
+	line-height: 49px;
+	font-weight: 700;
+	color: #ffffff;
+	margin-top: 5px;
 }
 
-.top-section,
-.summery-section,
-.tech-section,
-.featured-projects,
-.more-projects,
-.reflect-section,
-.skills-section,
-.some-section,
-footer {
-	border: solid red;
+.intro-text {
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 29px;
 }
 
-.top-textblock {
-	grid-column: span 3;
+.section-headings {
+	font-size: 22px;
+	line-height: 26.82px;
+	font-weight: 700;
+	background: #fa382f;
+	display: inline;
+	text-transform: uppercase;
+	color: #ffffff;
 }
+
+/********* Top Section *********/
+
+header {
+	height: 520px;
+}
+
+.hero-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	object-fit: cover;
+	height: 520px;
+	z-index: -1;
+}
+
+.top-icons-container {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 6.4vw;
+}
+
+.top-icons {
+	width: 40px;
+	margin-top: 48px;
+	margin-left: 4px;
+}
+
+.profile-container {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.profile-picture {
+	border-radius: 50%;
+	width: 180px;
+	border: solid 3px #ffffff;
+	position: absolute;
+	top: 360px;
+	object-fit: cover;
+}
+
+/********* Summery Section *********/
+
+.line {
+	border: 1px solid #fa382f;
+	width: 40px;
+	display: inline-block;
+	margin-bottom: 4px;
+}
+
+.dot {
+	height: 10px;
+	width: 10px;
+	background-color: #fa382f;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 12px;
+}
+
+/********* Media Queries *********/
 
 /* Big tablet */
 @media (min-width: 769px) {
 	.wrapper {
 		padding: 0px 10vw;
 	}
+	.top-icons {
+		width: 80px;
+	}
 }
 
 /* Small desktop */
 @media (min-width: 923px) {
+	.wrapper {
+		padding: 0px 21vw;
+	}
 }
