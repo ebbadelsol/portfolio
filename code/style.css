@@ -58,6 +58,7 @@ section {
 	text-transform: uppercase;
 	color: #ffffff;
 	text-align: center;
+	margin-bottom: 30px;
 }
 
 .colored {
@@ -138,7 +139,53 @@ header {
 
 /********* Tech Section *********/
 
-/********* Featured Projects *********/
+/********* Grid, Projects & Reflections *********/
+
+.project-wrapper,
+.reflection-wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+
+.main-project,
+.main-reflection {
+	grid-column: span 4;
+}
+
+.image-container {
+	position: relative;
+	text-align: center;
+}
+
+.image-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #ffffff;
+}
+
+.project-image,
+.reflect-image {
+	width: 100%;
+	height: 61vw;
+	object-fit: cover;
+}
+
+/********* Projects *********/
+
+.featured-projects a,
+.more-projects a {
+	text-decoration: none;
+}
+
+/********* Footer *********/
+
+.contact {
+	background: #072bce;
+	color: #ffffff;
+}
 
 /********* Media Queries *********/
 
@@ -162,5 +209,13 @@ header {
 	}
 	.top-icons-container {
 		margin-right: 21vw;
+	}
+	.project-wrapper,
+	.reflection-wrapper {
+		grid-template-columns: repeat(8, 1fr);
+	}
+	.project-image,
+	.reflect-image {
+		height: 20vw;
 	}
 }
