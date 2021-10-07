@@ -46,7 +46,8 @@ body {
 	margin-top: 5px;
 }
 
-.text-container {
+.text-container,
+.skills-container {
 	font-family: "Roboto", sans-serif;
 	margin-bottom: 8px;
 }
@@ -63,18 +64,23 @@ body {
 	font-size: 21px;
 	font-weight: 700;
 	text-align: center;
-	margin: 60px 0 48px 0;
+	line-height: 21px;
+	margin: 60px 0 30px 0;
 }
 
 .reflect-title {
 	font-size: 21px;
 	font-weight: 700;
 	line-height: 30px;
-	/* margin: 60px 0 48px 0; */
 }
 
 .sub-project .project-title {
 	margin-top: 40px;
+}
+
+.sub-reflections article,
+.skills-title {
+	margin-top: 30px;
 }
 
 .tag-wrapper {
@@ -116,7 +122,7 @@ body {
 .image-title,
 .more-projects .sub-heading,
 .sub-reflections .sub-heading,
-.skills-sub-heading {
+.skills-title {
 	color: #fa382f;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -126,6 +132,15 @@ body {
 	background-color: #fa382f;
 	text-transform: uppercase;
 	padding: 1px 7px;
+	text-align: center;
+}
+
+.skills-title {
+	text-align: center;
+}
+
+.skills-list {
+	list-style-type: none;
 	text-align: center;
 }
 
@@ -188,10 +203,6 @@ header {
 	object-fit: cover;
 }
 
-/********* Summery Section *********/
-
-/********* Tech Section *********/
-
 /********* Grid, Projects & Reflections *********/
 
 .project-wrapper,
@@ -229,12 +240,26 @@ header {
 
 /********* Projects *********/
 
-/* here */
 .featured-projects a,
-/* .more-projects a, */
 .text-container a {
 	text-decoration: none;
 	color: #000000;
+}
+
+/********* Skills Section *********/
+
+.skills-container {
+	display: flex;
+	flex-direction: column;
+}
+
+/********* Social Media Section *********/
+
+.social-links {
+	display: flex;
+	justify-content: space-evenly;
+	/* justify-content: space-between; */
+	/* justify-content: space-around; */
 }
 
 /********* Footer *********/
