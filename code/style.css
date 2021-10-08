@@ -79,10 +79,17 @@ body {
 .project-title,
 .more-projects .sub-heading,
 .sub-reflections .sub-heading,
-.skills-title {
+.skills-title,
+.social-links {
 	color: #fa382f;
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+.social-links {
+	font-family: "Roboto", sans-serif;
+	text-decoration: none;
+	font-size: 12px;
 }
 
 .reflect-title {
@@ -184,9 +191,9 @@ header {
 }
 
 .top-icons {
-	width: 40px;
+	width: 42px;
 	margin-top: 48px;
-	margin-left: 4px;
+	margin-left: 8px;
 }
 
 .profile-container {
@@ -264,11 +271,19 @@ header {
 
 /********* Social Media Section *********/
 
-.social-links {
+.social-container {
 	display: flex;
 	justify-content: space-evenly;
-	/* justify-content: space-between; */
-	/* justify-content: space-around; */
+}
+
+.bottom-icons {
+	width: 60px;
+}
+
+.social-icon-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 /********* Footer *********/
@@ -284,32 +299,36 @@ header {
 
 /********* Media Queries *********/
 
-/* Big tablet */
-@media (min-width: 769px) {
+/* Small tablet */
+@media (min-width: 768px) {
 	.container {
 		padding: 48px 10vw;
 	}
 	.top-icons-container {
 		margin-right: 10vw;
 	}
-	.top-icons {
-		width: 80px;
-	}
 	.skills-wrapper {
 		justify-content: space-evenly;
 	}
 }
 
-/* Small desktop */
-@media (min-width: 923px) {
+/* Big tablet */
+@media (min-width: 992px) {
+	.top-icons {
+		width: 60px;
+	}
+	.project-wrapper,
+	.reflection-wrapper {
+		grid-template-columns: repeat(8, 1fr);
+	}
+}
+
+/* Bigger Desktop */
+@media (min-width: 1200px) {
 	.container {
 		padding: 48px 21vw;
 	}
 	.top-icons-container {
 		margin-right: 21vw;
-	}
-	.project-wrapper,
-	.reflection-wrapper {
-		grid-template-columns: repeat(8, 1fr);
 	}
 }
