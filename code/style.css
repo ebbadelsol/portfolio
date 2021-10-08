@@ -44,13 +44,17 @@ body {
 	margin-top: 5px;
 }
 
-.section-heading {
+.section-heading,
+.image-title {
 	font-size: 22px;
 	font-weight: 700;
 	color: #ffffff;
 	text-align: center;
-	margin-bottom: 30px;
 	text-transform: uppercase;
+}
+
+.section-heading {
+	margin-bottom: 30px;
 }
 
 .section-heading span {
@@ -69,11 +73,10 @@ body {
 
 .text-container {
 	font-family: "Roboto", sans-serif;
-	margin-bottom: 8px;
+	margin-bottom: 6px;
 }
 
 .project-title,
-.image-title,
 .more-projects .sub-heading,
 .sub-reflections .sub-heading,
 .skills-title {
@@ -98,6 +101,7 @@ body {
 
 .tag-wrapper {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .tag-wrapper p {
@@ -213,25 +217,30 @@ header {
 	grid-column: span 4;
 }
 
-.image-container {
+.project-img-container {
+	aspect-ratio: 5/3;
 	position: relative;
-	text-align: center;
 }
 
-.image-title {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: #ffffff;
+.reflection-img-container {
+	aspect-ratio: 5/4;
 }
 
 .project-image,
 .reflect-image {
 	width: 100%;
-	height: 52.32vw;
+	height: 100%;
 	object-fit: cover;
-	margin-bottom: 18px;
+	margin-bottom: 17px;
+	display: block;
+}
+
+.image-title {
+	position: absolute;
+	top: 44%;
+	text-align: center;
+	display: block;
+	width: 100%;
 }
 
 /********* Projects *********/
@@ -286,12 +295,8 @@ header {
 	.top-icons {
 		width: 80px;
 	}
-	.project-image,
-	.reflect-image {
-		height: 48vw;
-	}
 	.skills-wrapper {
-		justify-content: space-around;
+		justify-content: space-evenly;
 	}
 }
 
@@ -306,13 +311,5 @@ header {
 	.project-wrapper,
 	.reflection-wrapper {
 		grid-template-columns: repeat(8, 1fr);
-	}
-	.project-image,
-	.reflect-image {
-		height: 20vw;
-	}
-	.project-image,
-	.reflect-image {
-		height: 34.8vw;
 	}
 }
