@@ -26,10 +26,8 @@ body {
 
 .kicker {
 	font-family: "Roboto", sans-serif;
-	font-weight: 400;
-	font-size: 13px;
-	line-height: 18px;
-	letter-spacing: 0.04em;
+	font-weight: 300;
+	letter-spacing: 0.05em;
 	text-transform: uppercase;
 	color: #ffffff;
 }
@@ -39,17 +37,11 @@ body {
 }
 
 .big-heading {
-	font-size: 40px;
-	line-height: 49px;
+	font-size: 46px;
+	line-height: 56px;
 	font-weight: 700;
 	color: #ffffff;
 	margin-top: 5px;
-}
-
-.text-container,
-.skills-container {
-	font-family: "Roboto", sans-serif;
-	margin-bottom: 8px;
 }
 
 .section-heading {
@@ -58,6 +50,13 @@ body {
 	color: #ffffff;
 	text-align: center;
 	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+
+.section-heading span {
+	background-color: #fa382f;
+	padding: 1px 7px;
+	text-align: center;
 }
 
 .sub-heading {
@@ -66,6 +65,21 @@ body {
 	text-align: center;
 	line-height: 21px;
 	margin: 60px 0 30px 0;
+}
+
+.text-container {
+	font-family: "Roboto", sans-serif;
+	margin-bottom: 8px;
+}
+
+.project-title,
+.image-title,
+.more-projects .sub-heading,
+.sub-reflections .sub-heading,
+.skills-title {
+	color: #fa382f;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .reflect-title {
@@ -88,12 +102,12 @@ body {
 }
 
 .tag-wrapper p {
-	font-family: "Roboto", sans-serif;
 	background-color: #fddfe7;
 	font-size: 11px;
 	line-height: 11px;
 	padding: 6px 8px;
 	margin-right: 8px;
+	margin-top: 8px;
 	border-radius: 3px;
 }
 
@@ -115,23 +129,6 @@ body {
 
 .contact-info,
 .tech-info {
-	text-align: center;
-}
-
-.project-title,
-.image-title,
-.more-projects .sub-heading,
-.sub-reflections .sub-heading,
-.skills-title {
-	color: #fa382f;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-.section-heading span {
-	background-color: #fa382f;
-	text-transform: uppercase;
-	padding: 1px 7px;
 	text-align: center;
 }
 
@@ -248,9 +245,13 @@ header {
 
 /********* Skills Section *********/
 
-.skills-container {
+.skills-wrapper {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-content: space-between;
+	/* justify-content: space-evenly; */
+	/* justify-content: space-around; */
 }
 
 /********* Social Media Section *********/
@@ -289,6 +290,9 @@ header {
 	.project-image,
 	.reflect-image {
 		height: 48vw;
+	}
+	.skills-wrapper {
+		justify-content: space-around;
 	}
 }
 
