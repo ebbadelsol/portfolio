@@ -86,6 +86,12 @@ body {
 	text-transform: uppercase;
 }
 
+.project-title,
+.skills-title {
+	font-size: 17px;
+	line-height: 29px;
+}
+
 .social-links {
 	font-family: "Roboto", sans-serif;
 	text-decoration: none;
