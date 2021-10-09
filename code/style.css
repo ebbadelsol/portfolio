@@ -22,24 +22,38 @@ body {
 	background-color: #f4f4f4;
 }
 
-/********* Text Styles *********/
+/********* General Text Styles *********/
 
-.kicker {
-	font-family: "Roboto", sans-serif;
-	font-weight: 300;
-	letter-spacing: 0.05em;
+.enhanced {
 	text-transform: uppercase;
-	color: #ffffff;
 }
 
-.name {
+.highlighted {
+	color: #fa382f;
+}
+
+.bold {
 	font-weight: 700;
+}
+
+/********* Text Styles *********/
+
+.text-container,
+.kicker,
+.social-links,
+.more-thoughts-link {
+	font-family: "Roboto", sans-serif;
+}
+
+.kicker {
+	font-weight: 300;
+	letter-spacing: 0.05em;
+	color: #ffffff;
 }
 
 .big-heading {
 	font-size: 46px;
 	line-height: 56px;
-	font-weight: 700;
 	color: #ffffff;
 	margin-top: 5px;
 }
@@ -47,10 +61,8 @@ body {
 .section-heading,
 .image-title {
 	font-size: 22px;
-	font-weight: 700;
 	color: #ffffff;
 	text-align: center;
-	text-transform: uppercase;
 }
 
 .section-heading {
@@ -60,30 +72,21 @@ body {
 .section-heading span {
 	background-color: #fa382f;
 	padding: 1px 7px;
-	text-align: center;
 }
 
 .sub-heading {
-	font-size: 21px;
-	font-weight: 700;
+	font-size: 20px;
 	text-align: center;
 	line-height: 21px;
 	margin: 60px 0 30px 0;
 }
 
-.text-container {
-	font-family: "Roboto", sans-serif;
-	margin-bottom: 6px;
+.sub-project .project-title {
+	margin-top: 40px;
 }
 
-.project-title,
-.more-projects .sub-heading,
-.sub-reflections .sub-heading,
-.skills-title,
-.social-links {
-	color: #fa382f;
-	font-weight: 700;
-	text-transform: uppercase;
+.sub-reflections article {
+	margin-top: 30px;
 }
 
 .project-title,
@@ -93,23 +96,13 @@ body {
 }
 
 .social-links {
-	font-family: "Roboto", sans-serif;
 	text-decoration: none;
 	font-size: 12px;
 }
 
 .reflect-title {
 	font-size: 21px;
-	font-weight: 700;
 	line-height: 30px;
-}
-
-.sub-project .project-title {
-	margin-top: 40px;
-}
-
-.sub-reflections article {
-	margin-top: 30px;
 }
 
 .tag-wrapper {
@@ -127,20 +120,14 @@ body {
 	border-radius: 3px;
 }
 
-.tech-info span {
-	color: #fa382f;
-}
-
 .more-thoughts-link {
-	font-family: "Roboto", sans-serif;
 	color: #000000;
-	font-weight: 700;
 }
 
-.date-text {
-	color: #fa382f;
-	text-transform: uppercase;
-	font-weight: 400;
+.featured-projects a,
+.text-container a {
+	text-decoration: none;
+	color: #000000;
 }
 
 .contact-info,
@@ -149,22 +136,6 @@ body {
 .skills-list {
 	text-align: center;
 	list-style-type: none;
-}
-
-.line {
-	border: 1px solid #fa382f;
-	width: 40px;
-	display: inline-block;
-	margin-bottom: 4px;
-}
-
-.dot {
-	height: 10px;
-	width: 10px;
-	background-color: #fa382f;
-	border-radius: 50%;
-	display: inline-block;
-	margin-right: 12px;
 }
 
 /********* Top Section *********/
@@ -210,6 +181,24 @@ header {
 	object-fit: cover;
 }
 
+/********* Summery Section *********/
+
+.line {
+	border: 1px solid #fa382f;
+	width: 40px;
+	display: inline-block;
+	margin-bottom: 4px;
+}
+
+.dot {
+	height: 10px;
+	width: 10px;
+	background-color: #fa382f;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 12px;
+}
+
 /********* Grid, Projects & Reflections *********/
 
 .project-wrapper,
@@ -238,8 +227,8 @@ header {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	margin-bottom: 17px;
 	display: block;
+	margin-bottom: 17px;
 }
 
 .image-title {
@@ -248,14 +237,6 @@ header {
 	text-align: center;
 	display: block;
 	width: 100%;
-}
-
-/********* Projects *********/
-
-.featured-projects a,
-.text-container a {
-	text-decoration: none;
-	color: #000000;
 }
 
 /********* Skills Section *********/
