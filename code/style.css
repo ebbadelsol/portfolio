@@ -144,17 +144,11 @@ body {
 }
 
 .contact-info,
-.tech-info {
-	text-align: center;
-}
-
-.skills-title {
-	text-align: center;
-}
-
+.tech-info,
+.skills-title,
 .skills-list {
-	list-style-type: none;
 	text-align: center;
+	list-style-type: none;
 }
 
 .line {
