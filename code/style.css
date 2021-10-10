@@ -78,7 +78,11 @@ body {
 	font-size: 20px;
 	text-align: center;
 	line-height: 20px;
-	margin: 60px 0 30px 0;
+	margin-bottom: 30px;
+}
+
+.sub-heading:not(.contact-heading) {
+	margin-top: 60px;
 }
 
 .sub-project .project-title {
@@ -142,6 +146,10 @@ body {
 
 header {
 	height: 520px;
+}
+
+.big-heading {
+	width: 70%;
 }
 
 .hero-image {
@@ -246,8 +254,6 @@ header {
 	flex-wrap: wrap;
 	justify-content: center;
 	justify-content: space-between;
-	/* justify-content: space-evenly; */
-	/* justify-content: space-around; */
 }
 
 /********* Social Media Section *********/
@@ -275,7 +281,7 @@ header {
 }
 
 .contact-info {
-	margin-bottom: 48px;
+	margin-bottom: 48px 0 48px;
 }
 
 /********* Media Queries *********/
@@ -291,7 +297,7 @@ header {
 	.skills-wrapper {
 		justify-content: space-evenly;
 	}
-	.top-text-container {
+	.big-heading {
 		width: 50%;
 	}
 	.bottom-icons {
@@ -301,7 +307,6 @@ header {
 		width: 33%;
 	}
 	.social-links {
-		text-decoration: none;
 		font-size: 12px;
 		width: 20%;
 	}
@@ -313,14 +318,15 @@ header {
 		width: 50px;
 		margin-left: 10px;
 	}
-	.container {
-		padding: 120px 10vw;
+	.container:not(.top-section) {
+		padding-top: 120px;
+		padding-bottom: 120px;
 	}
 	.project-wrapper,
 	.reflection-wrapper {
 		grid-template-columns: repeat(8, 1fr);
 	}
-	.top-text-container {
+	.big-heading {
 		width: 40%;
 	}
 	.bottom-icons {
@@ -339,12 +345,24 @@ header {
 		font-size: 16px;
 		margin-top: 8px;
 	}
+	.intro-text,
+	.tech-info {
+		font-size: 19px;
+		line-height: 32px;
+	}
+	.big-heading {
+		font-size: 58px;
+		line-height: 76px;
+		color: #ffffff;
+		margin-top: 5px;
+	}
 }
 
 /* Bigger Desktop */
 @media (min-width: 1200px) {
 	.container {
-		padding: 120px 21vw;
+		padding-left: 18vw;
+		padding-right: 18vw;
 	}
 	.top-icons-container {
 		margin-right: 21vw;
@@ -355,7 +373,18 @@ header {
 		color: #ffffff;
 		margin-top: 5px;
 	}
-	.top-text-container {
+	.big-heading {
 		width: 45%;
+	}
+	.intro-text,
+	.tech-info {
+		font-size: 22px;
+		line-height: 37px;
+	}
+	.big-heading {
+		font-size: 65px;
+		line-height: 85px;
+		color: #ffffff;
+		margin-top: 5px;
 	}
 }
