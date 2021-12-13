@@ -173,6 +173,11 @@ header {
 	width: 42px;
 	margin-top: 48px;
 	margin-left: 8px;
+	transition: all 0.2s ease-in-out;
+}
+
+.top-icons:hover {
+	transform: scale(1.05);
 }
 
 .profile-container {
@@ -252,7 +257,6 @@ header {
 .skills-wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
 	justify-content: space-between;
 }
 
@@ -265,13 +269,21 @@ header {
 
 .bottom-icons {
 	width: 60px;
+	transition: all 0.2s ease-in-out;
+}
+
+.social-links:hover .bottom-icons {
+	transform: scale(1.05);
 }
 
 .social-links {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/* flex-basis: 100%; */
+}
+
+.skill-title {
+	margin-top: 2px;
 }
 
 /********* Footer *********/
@@ -312,7 +324,7 @@ header {
 /* Big tablet */
 @media (min-width: 992px) {
 	.top-icons {
-		width: 50px;
+		width: 48px;
 		margin-left: 10px;
 	}
 	.container:not(.top-section) {
@@ -346,7 +358,7 @@ header {
 	}
 	.big-heading {
 		font-size: 58px;
-		line-height: 76px;
+		line-height: 67px;
 		color: #ffffff;
 		margin-top: 5px;
 		width: 40%;
@@ -363,19 +375,8 @@ header {
 		margin-right: 18vw;
 	}
 	.big-heading {
-		font-size: 58px;
-		line-height: 76px;
-		color: #ffffff;
-		margin-top: 5px;
-	}
-	.intro-text,
-	.tech-info {
-		font-size: 22px;
-		line-height: 37px;
-	}
-	.big-heading {
 		font-size: 65px;
-		line-height: 85px;
+		line-height: 75px;
 		color: #ffffff;
 		margin-top: 5px;
 		width: 45%;
