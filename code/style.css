@@ -344,7 +344,7 @@ header {
 @media (min-width: 992px) {
 	.top-icons {
 		width: 48px;
-		margin-left: 10px;
+		margin-left: 15px;
 	}
 	.container:not(.top-section) {
 		padding-top: 120px;
