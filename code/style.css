@@ -267,10 +267,11 @@ header {
 	width: 60px;
 }
 
-.social-icon-wrapper {
+.social-links {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	/* flex-basis: 100%; */
 }
 
 /********* Footer *********/
@@ -301,14 +302,10 @@ header {
 		width: 50%;
 	}
 	.bottom-icons {
-		width: 80px;
+		width: 75px;
 	}
 	.skills-wrapper .text-container {
-		width: 33%;
-	}
-	.social-links {
-		font-size: 12px;
-		width: 20%;
+		width: 148px;
 	}
 }
 
@@ -322,12 +319,12 @@ header {
 		padding-top: 120px;
 		padding-bottom: 120px;
 	}
+	footer .sub-heading {
+		margin-top: 0;
+	}
 	.project-wrapper,
 	.reflection-wrapper {
 		grid-template-columns: repeat(8, 1fr);
-	}
-	.bottom-icons {
-		width: 100px;
 	}
 	.section-heading {
 		font-size: 30px;
