@@ -334,6 +334,10 @@ header {
 	.skills-wrapper .text-container {
 		width: 148px;
 	}
+	.project-wrapper,
+	.reflection-wrapper {
+		grid-template-columns: repeat(8, 1fr);
+	}
 }
 
 /* Big tablet */
@@ -348,10 +352,6 @@ header {
 	}
 	footer .sub-heading {
 		margin-top: 0;
-	}
-	.project-wrapper,
-	.reflection-wrapper {
-		grid-template-columns: repeat(8, 1fr);
 	}
 	.section-heading {
 		font-size: 30px;
